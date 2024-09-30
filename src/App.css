@@ -1,0 +1,68 @@
+/* App.css */
+
+
+/* App.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body.light {
+  background-color: hsl(240, 48%, 91%);
+  color: black;
+}
+
+body.dark {
+  background-color: #333;
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1e9e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the navbar is centered vertically */
+}
+
+/* Styling for the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 90px; /* Adds space between the links */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Styling for the links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Styling for active link */
+.nav-link.active {
+  background-color: #ff6600;
+  border-radius: 5px;
+}

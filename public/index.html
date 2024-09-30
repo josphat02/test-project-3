@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <body>
+    <script>
+      if (typeof process === 'undefined') {
+          window.process = {
+              env: {},
+              versions: {
+                  node: "v14.17.0",
+              },
+              nextTick: (callback) => {
+                  setTimeout(callback, 0);
+              },
+          };
+      }
+  </script>
+  <script src="your-script.js"></script>
+  
+    <div id="root"></div>
+    
+  </body>
+</html>
