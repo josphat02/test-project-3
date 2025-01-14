@@ -12,9 +12,8 @@ function Home() {
       .then(response => response.json())
       .then(data => setUsers(data.results));
   }, []);
-  // Add a new user to the list
   const addUser = (user) => {
-    // Create a new user object to be added to the list
+  
     const newUser = {
       name: { first: user.name, last: '' },
       email: user.email,
@@ -34,10 +33,10 @@ function Home() {
   return (
     <div className="container">
       <h2>User Directory</h2>
-      {/* Add the AddUser form */}
+    
       <AddUser addUser={addUser} />
       <ul>
-        {/* Loop through users and display them */}
+      
         {users.map((user,index )=> (
           <li key={index}>
             {user.name.first} {user.name.last} - {user.email}
